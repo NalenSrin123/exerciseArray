@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .box{
+        width: 35%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="box  mt-5 ">
+        <h3 class="text-center">Array Dimensional </h3>
+        <hr>
+        <form action="">
+            <div class="form-group d-flex gap-4 mt-5">
+                <label for="val" class="form-label">Input Value</label>
+                <input type="text" name="" id="val" class="form-control w-75">
+            </div>
+            <div class="form-group d-flex justify-content-center mt-4">
+                <button type="button" class="btn me-2 btn-dark" id="add">Add</button>
+                <button type="button" class="btn me-2 btn-success" id="view">View</button>
+                <button type="button" class="btn me-2 btn-info" id="search">Search</button>
+                <button type="button" class="btn me-2 btn-warning" id="update">Update</button>
+                <button type="button" class="btn me-2 btn-danger" id="delete">Delete</button>
+            </div>
+        </form>
+        <table class="table table-bordered mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Element</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="exercise.js"></script>
