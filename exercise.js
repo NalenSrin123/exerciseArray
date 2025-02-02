@@ -111,4 +111,36 @@ function update(){
     })
 }
 update();
+ function Delete(){
+    const btnDelete=document.getElementById('delete');
+    btnDelete.addEventListener("click",function(){
+        const index=numbers.indexOf(num.value);
+        if(index==-1){
+            Swal.fire({
+                title: "Error!",
+                text: "Number not found!",
+                icon: "error"
+              });
+        }else{
+            tbody.innerHTML='';
+            delete numbers[index];
+            Swal.fire({
+                title: "Success!",
+                text: "Delete Success!",
+                icon: "success"
+              });
+              numbers.forEach((ele,index)=>{
+                tbody.innerHTML+=`
+                    <tr>
+                        <td>${index}</td>
+                        <td>${ele}</td>
+                    </tr>
+                `;
+           })
+
+        }
+        num.value='';
+    })
+ }
+ Delete();
 
